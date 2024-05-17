@@ -52,17 +52,17 @@ int main( ){
     Punto p4{-2, -3}, p5{5, -4}, p6{-1,3};
     Punto p7{6, 7}, p8{6, 3}, p9{8,3};
     Triangulo tri1{p4,p5,p6}, tri2{p1, p2, p3}, tri3{p7, p8, p9};
-    string nombre;
-    int edad;
+    //string nombre;
+    //int edad;
 
-    for (int alumnos = 1; alumnos < 4; alumnos ++){
-        cout << "Ingresa tu nombre: ";
-        getline(cin, nombre);
-        cout << nombre << endl;
-        cout << "Ingresa tu edad: ";
-        cin >> edad;
-        cin.ignore();
-    }
+    //for (int alumnos = 1; alumnos < 4; alumnos ++){
+        //cout << "Ingresa tu nombre: ";
+        //getline(cin, nombre);
+        //cout << nombre << endl;
+        //cout << "Ingresa tu edad: ";
+        //cin >> edad;
+        //cin.ignore();
+    //}
     //Declaracion de Arreglos
     Triangulo arrT[100];
 
