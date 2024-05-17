@@ -4,17 +4,17 @@
 //
 //  Created by Ma. Guadalupe Roque Díaz de León on 18/05/23.
 //
-#include <stdio.h>
 #include <iostream>
-#include <iomanip> // for std::setprecision()
 #include "Punto.hpp"
 #include "Triangulo.hpp"
+#include <stdio.h>
 #include <string>
 using namespace std;
 
-void desplegarArregloTriangulo(Triangulo arrTriangulos[], int iS){
+void desplegarArregloTriangulo(Triangulo arrTriangulos[], int iS ){
+
     for (int indice = 0; indice < iS; indice++){
-        cout << indice << ", " << arrTriangulos[indice].str() << endl;
+        cout << indice << ". " << arrTriangulos[indice].str() << endl;
     }
 
 }
@@ -30,7 +30,6 @@ void leerArregloTriangulos(Triangulo arrTriangulos[], int iS){
         pto.setX(x1);
         pto.setY(y1);
         arrTriangulos[indice].setVertice1(pto);
-        //cout << pto.str() << endl;
 
         pto.setX(x2);
         pto.setY(y2);

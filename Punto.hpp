@@ -2,6 +2,7 @@
 #define Punto_hpp
 #include <stdio.h>
 #include <string>
+#include <math.h>
 
 class Punto {
     private:

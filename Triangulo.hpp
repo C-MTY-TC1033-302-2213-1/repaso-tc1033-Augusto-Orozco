@@ -5,9 +5,9 @@
 #include <string>
 
 class Triangulo{
-    private:
+private:
     Punto v1, v2, v3;
-    public:
+public:
     Triangulo();
     Triangulo(Punto _v1, Punto _v2, Punto _v3);
 

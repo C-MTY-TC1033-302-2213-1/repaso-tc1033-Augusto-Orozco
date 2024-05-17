@@ -1,4 +1,5 @@
 #include "Triangulo.hpp"
+
 Triangulo::Triangulo(){
     v1 = Punto(0,0);
     v2 = Punto(50,30);
@@ -26,7 +27,7 @@ void Triangulo::setVertice1(Punto _v1){
     v1 = _v1;
 }
 void Triangulo::setVertice2(Punto _v2){
-    v1 = _v2;
+    v2 = _v2;
 }
 void Triangulo::setVertice3(Punto _v3){
     v3 = _v3;
