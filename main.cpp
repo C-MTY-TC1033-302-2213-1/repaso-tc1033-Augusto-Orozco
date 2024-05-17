@@ -52,8 +52,8 @@ int main( ){
     Punto p4{-2, -3}, p5{5, -4}, p6{-1,3};
     Punto p7{6, 7}, p8{6, 3}, p9{8,3};
     Triangulo tri1{p4,p5,p6}, tri2{p1, p2, p3}, tri3{p7, p8, p9};
-    //string nombre;
-    //int edad;
+    string nombre;
+    int edad;
 
     //Declaracion de Arreglos
     Triangulo arrT[100];
@@ -63,22 +63,22 @@ int main( ){
     desplegarArregloTriangulo(arrT, 5);
     calcularPerimetroArea(arrT, 5);
 
-    //cout << "p_tri1 = " << tri1.perimetro() << endl;
-    //cout << "a_tri1 = " << tri1.area() << endl;
-    //cout << "p_tri2 = " << tri2.perimetro() << endl;
-    //cout << "a_tri2 = " << tri2.area() << endl;
-    //cout << "p_tri3 = " << tri3.perimetro() << endl;
-    //cout << "a_tri3 = " << tri3.area() << endl;
-    //cout << "Distancia = " << p1.calculaDistancia(p2)  << endl;
+    cout << "p_tri1 = " << tri1.perimetro() << endl;
+    cout << "a_tri1 = " << tri1.area() << endl;
+    cout << "p_tri2 = " << tri2.perimetro() << endl;
+    cout << "a_tri2 = " << tri2.area() << endl;
+    cout << "p_tri3 = " << tri3.perimetro() << endl;
+    cout << "a_tri3 = " << tri3.area() << endl;
+    cout << "Distancia = " << p1.calculaDistancia(p2)  << endl;
 
-    //for(int alumnos = 1; alumnos < 4; alumnos ++){
-        //cout << "Ingresa tu nombre: ";
-        //getline(cin, nombre);
-        //cout << nombre << endl;
-        //cout << "Ingresa tu edad: ";
-        //cin >> edad;
-        //cin.ignore();
-    //}
+    for(int alumnos = 1; alumnos < 4; alumnos ++){
+        cout << "Ingresa tu nombre: ";
+        getline(cin, nombre);
+        cout << nombre << endl;
+        cout << "Ingresa tu edad: ";
+        cin >> edad;
+        cin.ignore();
+    }
 
     return 0;
 }
