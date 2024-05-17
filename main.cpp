@@ -14,7 +14,7 @@ using namespace std;
 void desplegarArregloTriangulo(Triangulo arrTriangulos[], int iS ){
 
     for (int indice = 0; indice < iS; indice++){
-        cout << indice << ". " << arrTriangulos[indice].str() << endl;
+        cout << "Triangulo " << indice << ". " << arrTriangulos[indice].str() << endl;
     }
 
 }
@@ -55,6 +55,14 @@ int main( ){
     string nombre;
     int edad;
 
+    for (int alumnos = 1; alumnos < 4; alumnos ++){
+        cout << "Ingresa tu nombre: ";
+        getline(cin, nombre);
+        cout << nombre << endl;
+        cout << "Ingresa tu edad: ";
+        cin >> edad;
+        cin.ignore();
+    }
     //Declaracion de Arreglos
     Triangulo arrT[100];
 
@@ -63,22 +71,13 @@ int main( ){
     desplegarArregloTriangulo(arrT, 5);
     calcularPerimetroArea(arrT, 5);
 
-    cout << "p_tri1 = " << tri1.perimetro() << endl;
-    cout << "a_tri1 = " << tri1.area() << endl;
-    cout << "p_tri2 = " << tri2.perimetro() << endl;
-    cout << "a_tri2 = " << tri2.area() << endl;
-    cout << "p_tri3 = " << tri3.perimetro() << endl;
-    cout << "a_tri3 = " << tri3.area() << endl;
-    cout << "Distancia = " << p1.calculaDistancia(p2)  << endl;
-
-    for(int alumnos = 1; alumnos < 4; alumnos ++){
-        cout << "Ingresa tu nombre: ";
-        getline(cin, nombre);
-        cout << nombre << endl;
-        cout << "Ingresa tu edad: ";
-        cin >> edad;
-        cin.ignore();
-    }
+    //cout << "p_tri1 = " << tri1.perimetro() << endl;
+    //cout << "a_tri1 = " << tri1.area() << endl;
+    //cout << "p_tri2 = " << tri2.perimetro() << endl;
+    //cout << "a_tri2 = " << tri2.area() << endl;
+    //cout << "p_tri3 = " << tri3.perimetro() << endl;
+    //cout << "a_tri3 = " << tri3.area() << endl;
+    //cout << "Distancia = " << p1.calculaDistancia(p2)  << endl;
 
     return 0;
 }
